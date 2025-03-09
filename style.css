@@ -1,54 +1,65 @@
 body {
-  background-color: violet;
+  background-color: rgba(71, 102, 59);
+  color: white;
 }
 
 .wrapper {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: white;
-  border: 1px solid black;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px 60px;
+  background-color: rgba(71, 102, 59);
+  border: 5px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  margin: 0 20px 20px 20px;
+  margin: 0 20px 30px 20px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 select {
   width: 100%;
-  padding: 5px;
-  margin: 0 0 20px 0;
+  padding: 7px;
+  margin-bottom: 30px;
+  border: none;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 .city {
   display: flex;
   justify-content: space-between;
-  align: center;
   margin: 20px;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.city:last-child {
+  border: none;
+  margin: 0 20px;
 }
 
 h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: lighter;
+  font-size: 32px;
+  letter-spacing: 2px;
   margin: 0;
 }
 
 .date {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   margin: 10px 0 20px 0;
 }
 
 .time {
-  font-size: 42px;
+  font-size: 45px;
 }
 
 .am-pm {
@@ -58,11 +69,11 @@ h2 {
 }
 
 .signature {
-  color: rgba(11, 11, 11, 0.8);
-  margin: 20px 60px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
   font-family: monospace;
 }
 
 a {
-  color: rgba(11, 11, 11, 0.8);
+  color: rgba(255, 255, 255, 0.5);
 }
