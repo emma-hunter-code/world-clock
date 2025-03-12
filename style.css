@@ -31,16 +31,16 @@ select {
   font-size: 14px;
 }
 
-.city {
+.city-info {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 5px 5px 25px 5px;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
 }
 
-.city:last-child {
+.city-info:last-child {
   border: none;
-  margin: 0 20px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -59,7 +59,7 @@ h2 {
 }
 
 .time {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 small {

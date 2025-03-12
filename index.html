@@ -13,24 +13,32 @@
       <h1>World Clock</h1>
       <select name="cityselect" id="cityselect">
         <option value="">Select a city</option>
+        <option value="current">Current location</option>
         <option value="Europe/London">London</option>
         <option value="America/Vancouver">Vancouver</option>
         <option value="Australia/Adelaide">Adelaide</option>
       </select>
-      <div class="cities">
-        <div class="city" id="london">
-          <div class="city-date">
+      <div class="city" id="city">
+        <div class="city-info" id="london">
+          <div class="city-name">
             <h2>London</h2>
-            <div class="date"></div>
+            <div class="date" id="date"></div>
           </div>
-          <div class="time"><small></small></div>
+          <div class="time" id="time"><small> </small></div>
         </div>
-        <div class="city" id="vancouver">
-          <div class="city-date">
+        <div class="city-info" id="vancouver">
+          <div class="city-name">
             <h2>Vancouver</h2>
-            <div class="date"></div>
+            <div class="date" id="date"></div>
           </div>
-          <div class="time"><small></small></div>
+          <div class="time" id="time"><small> </small></div>
+        </div>
+        <div class="city-info" id="adelaide">
+          <div class="city-name">
+            <h2>Adelaide</h2>
+            <div class="date" id="date"></div>
+          </div>
+          <div class="time" id="time"><small> </small></div>
         </div>
       </div>
     </div>
