@@ -43,7 +43,8 @@ function updateCity(event) {
       <div class="city-date">
         <h2>${cityName}</h2>
         <div class="date">${cityTime.format("dddd, MMMM Do YYYY")}</div>
-      </div>
+      <a class="refresh" href="/">Refresh</a>
+        </div>
       <div class="time">
         ${cityTime.format("h:mm:ss ")}
         <small>${cityTime.format("A")}</small>
