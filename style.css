@@ -61,6 +61,7 @@ select {
   margin-bottom: 0;
 }
 
+.city-name,
 h2 {
   font-family: monospace;
   font-weight: lighter;
@@ -76,11 +77,6 @@ h2 {
   font-size: 40px;
   margin: 20px;
   color: rgb(0, 0, 0);
-}
-
-small {
-  font-size: 21px;
-  margin-left: -20px;
 }
 
 .date {
