@@ -9,25 +9,25 @@ function updateTime() {
     "h:mm:ss [<small>]A[</small>]"
   );
 
-  let vancouverElement = document.querySelector("#vancouver");
-  let vancouverDateElement = vancouverElement.querySelector("#date");
-  let vancouverTimeElement = vancouverElement.querySelector("#time");
-  let vancouverTime = moment().tz("America/vancouver");
+  //   let vancouverElement = document.querySelector("#vancouver");
+  //   let vancouverDateElement = vancouverElement.querySelector("#date");
+  //   let vancouverTimeElement = vancouverElement.querySelector("#time");
+  //   let vancouverTime = moment().tz("America/vancouver");
 
-  vancouverDateElement.innerHTML = vancouverTime.format("dddd, MMMM Do YYYY");
-  vancouverTimeElement.innerHTML = vancouverTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
+  //   vancouverDateElement.innerHTML = vancouverTime.format("dddd, MMMM Do YYYY");
+  //   vancouverTimeElement.innerHTML = vancouverTime.format(
+  //     "h:mm:ss [<small>]A[</small>]"
+  //   );
 
-  let adelaideElement = document.querySelector("#adelaide");
-  let adelaideDateElement = adelaideElement.querySelector("#date");
-  let adelaideTimeElement = adelaideElement.querySelector("#time");
-  let adelaideTime = moment().tz("Australia/Adelaide");
+  //   let adelaideElement = document.querySelector("#adelaide");
+  //   let adelaideDateElement = adelaideElement.querySelector("#date");
+  //   let adelaideTimeElement = adelaideElement.querySelector("#time");
+  //   let adelaideTime = moment().tz("Australia/Adelaide");
 
-  adelaideDateElement.innerHTML = adelaideTime.format("dddd, MMMM Do YYYY");
-  adelaideTimeElement.innerHTML = adelaideTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
+  //   adelaideDateElement.innerHTML = adelaideTime.format("dddd, MMMM Do YYYY");
+  //   adelaideTimeElement.innerHTML = adelaideTime.format(
+  //     "h:mm:ss [<small>]A[</small>]"
+  //   );
 }
 
 function updateCity(event) {
@@ -42,14 +42,15 @@ function updateCity(event) {
   <div class="city-info">
       <div class="city-date">
         <h2>${cityName}</h2>
-        <div class="date">${cityTime.format("dddd, MMMM Do YYYY")}</div>
-      <a class="refresh" href="/">Refresh</a>
         </div>
       <div class="time">
         ${cityTime.format("h:mm:ss ")}
-        <small>${cityTime.format("A")}</small>
+        <small>${cityTime.format("A")}</small></div>
+        <div class="date">${cityTime.format("dddd, MMMM Do YYYY")}</div>
       </div>
     </div>`;
+  let selectElement = document.querySelector("#selected");
+  selectElement.innerHTML = `<a class="refresh" href="/">Refresh</a>`;
 }
 
 updateTime();
