@@ -51,23 +51,3 @@ let citySelectElement = document.querySelector("#cityselect");
 citySelectElement.addEventListener("change", updateCity);
 
 let timeInterval;
-
-//   let vancouverElement = document.querySelector("#vancouver");
-//   let vancouverDateElement = vancouverElement.querySelector("#date");
-//   let vancouverTimeElement = vancouverElement.querySelector("#time");
-//   let vancouverTime = moment().tz("America/vancouver");
-
-//   vancouverDateElement.innerHTML = vancouverTime.format("dddd, MMMM Do YYYY");
-//   vancouverTimeElement.innerHTML = vancouverTime.format(
-//     "h:mm:ss [<small>]A[</small>]"
-//   );
-
-//   let adelaideElement = document.querySelector("#adelaide");
-//   let adelaideDateElement = adelaideElement.querySelector("#date");
-//   let adelaideTimeElement = adelaideElement.querySelector("#time");
-//   let adelaideTime = moment().tz("Australia/Adelaide");
-
-//   adelaideDateElement.innerHTML = adelaideTime.format("dddd, MMMM Do YYYY");
-//   adelaideTimeElement.innerHTML = adelaideTime.format(
-//     "h:mm:ss [<small>]A[</small>]"
-//   );
